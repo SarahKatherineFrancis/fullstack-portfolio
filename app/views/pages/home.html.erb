@@ -1,5 +1,16 @@
-<h1>Hello, I'm Sarah Francis.
-  <br>
-  I'm a full-stack developer.
-</h1>
-<%= link_to "View my work", about_path %>
+<section id="home" class="flex">
+  <div class="background"></div>
+  <div class="flex">
+    <div class="text">
+      Hello, I'm <span class="highlight">Sarah Francis</span>.
+      <br>
+      I'm a full-stack developer.
+    </div>
+    <%= link_to about_path, class: "button" do %>
+      <span>
+        View my work
+        <i class="fa-solid fa-arrow-right fa-fade highlight"></i>
+      </span>
+    <% end %>
+  </div>
+</section>
