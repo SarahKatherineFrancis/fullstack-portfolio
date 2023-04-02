@@ -1,4 +1,4 @@
-#home {
+.background {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -46,4 +46,8 @@
   border: 2px solid #fc2b48;
   background-color: #fc2b48;
   color: #fff;
+
+  .highlight {
+    color: #fff;
+  }
 }
