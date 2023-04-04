@@ -1,0 +1,61 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 20px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  liv {
+    margin-bottom: 10px;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nav-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.nav-about {
+  background-color: #eaeaea;
+  a {
+    color: #333333;
+  }
+}
+
+.nav-projects {
+  background-color: #f2a007;
+}
+
+.nav-skills {
+  background-color: #2c3e50;
+}
+
+.nav-education {
+  background-color: #2980b9;
+}
+
+.nav-contact {
+  background-color: #f1c40f;
+}
+
+.nav-blog {
+  background-color: #8e44ad;
+}

@@ -8,6 +8,9 @@ class PagesController < ApplicationController
   def projects
   end
 
+  def education
+  end
+
   def skills
   end
 
