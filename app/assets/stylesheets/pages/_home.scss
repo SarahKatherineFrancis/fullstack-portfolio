@@ -1,4 +1,4 @@
-#home {
+.background {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -25,6 +25,7 @@
   font-size: 40px;
   font-family: "Open Sans", sans-serif;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+  padding-left: 80px;
 }
 
 .highlight {
@@ -46,4 +47,8 @@
   border: 2px solid #fc2b48;
   background-color: #fc2b48;
   color: #fff;
+
+  .highlight {
+    color: #fff;
+  }
 }
