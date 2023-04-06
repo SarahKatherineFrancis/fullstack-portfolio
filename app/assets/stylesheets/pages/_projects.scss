@@ -1,0 +1,26 @@
+.card {
+  height: 400px;
+  width: 472px;
+  position: relative;
+
+  .image {
+    height: 240px;
+    margin-bottom: 3px;
+  }
+
+  .card-content {
+    padding: 20px;
+    height: 150px;
+  }
+
+  .card-title {
+    color: #fc2b48;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-title i {
+    margin-left: auto;
+  }
+}
