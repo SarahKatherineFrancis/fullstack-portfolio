@@ -1,10 +1,13 @@
-<nav class="sidebar">
-  <ul>
-    <li class="nav-item nav-about"><%= link_to "<i class='fas fa-user'></i> About".html_safe, about_path %></li>
-    <li class="nav-item nav-projects"><%= link_to "<i class='fas fa-file-code'></i> Projects".html_safe, projects_path %></li>
-    <li class="nav-item nav-skills"><%= link_to "<i class='fas fa-laptop-code'></i> Skills".html_safe, skills_path %></li>
-    <li class="nav-item nav-education"><%= link_to "<i class='fas fa-graduation-cap'></i> Education".html_safe, education_path %></li>
-    <li class="nav-item nav-contact"><%= link_to "<i class='fas fa-envelope'></i> Contact".html_safe, contact_path %></li>
-    <li class="nav-item nav-blog"><%= link_to "<i class='fas fa-blog'></i> Blog".html_safe, blog_path %></li>
-  </ul>
-</nav>
+<div class="sidebar-wrapper">
+  <nav class="sidebar hide-on-small-only">
+    <ul>
+      <li class="nav-item nav-about"><%= link_to "<i class='fas fa-user'></i> About".html_safe, about_path %></li>
+      <li class="nav-item nav-projects"><%= link_to "<i class='fas fa-file-code'></i> Projects".html_safe, projects_path %></li>
+      <li class="nav-item nav-skills"><%= link_to "<i class='fas fa-laptop-code'></i> Skills".html_safe, skills_path %></li>
+      <li class="nav-item nav-education"><%= link_to "<i class='fas fa-graduation-cap'></i> Education".html_safe, education_path %></li>
+      <li class="nav-item nav-contact"><%= link_to "<i class='fas fa-envelope'></i> Contact".html_safe, contact_path %></li>
+      <li class="nav-item nav-blog"><%= link_to "<i class='fas fa-blog'></i> Blog".html_safe, blog_path %></li>
+    </ul>
+    <button class="sidebar-toggle show-on-small-only"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+</div>
