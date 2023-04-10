@@ -4,7 +4,7 @@
   position: relative;
   border-radius: 4px;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  background-color: #f8f8f8;
 
   .image {
     height: 300px;
@@ -19,32 +19,34 @@
   }
 
   .card-title {
-    color: #fb62f6;
-    font-size: 24px;
+    color: #333;
+    font-size: 30px;
     display: flex;
     justify-content: space-between;
+    transition: color 0.3s ease;
   }
 
   .card-title i {
     margin-left: auto;
   }
 
-  .card-reveal {
+  .card-flip {
     display: none;
     position: absolute;
     width: 100%;
-    background-color: #fff;
+    background-color: #f8f8f8;
     padding: 24px;
     top: 0;
     left: 0;
     z-index: 1;
+    transition: opacity 0.3s ease;
   }
 
-  .card-reveal ul {
+  .card-flip ul {
     padding-bottom: 190px;
   }
 
-  .card-reveal li {
+  .card-flip li {
     font-size: 18px;
   }
 
@@ -57,17 +59,29 @@
 
   .card-action a {
     text-decoration: none;
+    font-size: 20px;
+    color: #645dd7;
+    border: 2px solid #645dd7;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .card-action a:hover {
+    background-color: #645dd7;
+    color: #fff;
   }
 }
 
-.card:hover .card-reveal {
+.project-card:hover .card-flip {
   display: block;
+  opacity: 1;
 }
 
-.card:hover .card-content {
+.project-card:hover .card-content {
   display: none;
 }
 
-.card:hover .card-image {
-  display: none;
+.project-card:hover .image {
+  opacity: 0.5;
 }

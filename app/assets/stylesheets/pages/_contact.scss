@@ -1,6 +1,7 @@
 .contact-details {
   display: flex;
   align-items: center;
+  margin-bottom: 24px; /* add some spacing between contact details */
 
   button {
     width: 60px;
@@ -12,6 +13,11 @@
     background-color: #645dd7;
     border: none;
     margin-right: 16px;
+    transition: all 0.3s ease; /* add transition effect to button */
+
+    &:hover {
+      transform: scale(1.1); /* increase button size on hover */
+    }
   }
 
   .contact-icon {
@@ -22,5 +28,6 @@
   a {
     text-decoration: none;
     color: #fc2b48;
+    font-weight: bold; /* add some emphasis to link text */
   }
 }

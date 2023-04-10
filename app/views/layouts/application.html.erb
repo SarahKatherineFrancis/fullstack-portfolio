@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FullstackPortfolio</title>
+    <title>Sarah Katherine Francis | Full-Stack Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,11 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="sidebar">
-      <%= render 'shared/sidebar' %>
-    </div>
-    <div class="content">
+    <% unless current_page?(root_path) %>
+      <div class="sidebar">
+        <%= render 'shared/sidebar' %>
+      </div>
+      <div class="content">
+        <%= yield %>
+      </div>
+    <% else %>
       <%= yield %>
-    </div>
+    <% end %>
   </body>
 </html>
