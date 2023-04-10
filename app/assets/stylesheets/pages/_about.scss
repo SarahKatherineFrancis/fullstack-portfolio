@@ -3,20 +3,23 @@
   width: 340px;
   height: 340px;
 }
-blockquote {
-  h2 {
-    border-left: 5px solid #f2a007;
-    color: #f2a007;
-    font-size: 24px;
-    margin: 24px 0;
-    padding-left: 1.5rem;
-    text-align: justify;
-  }
+
+.align-items-center {
+  display: flex;
+  align-items: center;
 }
 
 .paragraph-container {
+  h2 {
+    color: #645dd7;
+  }
+
   p {
     text-align: justify;
-    font-size: 16px;
+    font-size: 20px;
+  }
+
+  strong {
+    color: #645dd7;
   }
 }

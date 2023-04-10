@@ -1,11 +1,15 @@
-.card {
+.project-card {
   height: 480px;
   width: 500px;
   position: relative;
+  border-radius: 4px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 
   .image {
     height: 300px;
-    width: 498px;
+    width: 500px;
+    border-radius: 4px;
   }
 
   .card-content {
@@ -15,7 +19,7 @@
   }
 
   .card-title {
-    color: #fc2b48;
+    color: #fb62f6;
     font-size: 24px;
     display: flex;
     justify-content: space-between;
@@ -45,8 +49,8 @@
   }
 
   .card-action i {
-    font-size: 48px;
-    color: #fc2b48;
+    font-size: 44px;
+    color: #645dd7;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     margin-right: 16px;
   }

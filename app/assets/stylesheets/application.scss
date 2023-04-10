@@ -13,7 +13,9 @@
 
 .content {
   margin-left: 220px;
-  padding: 20px;
+  padding-bottom: 100px;
+  background: image-url("content.jpg") no-repeat;
+  background-size: cover;
 }
 
 .section {
