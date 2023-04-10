@@ -2,24 +2,35 @@
   border-radius: 50%;
   width: 340px;
   height: 340px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  object-fit: cover; /* add object-fit property to avoid image distortion */
 }
 
-.align-items-center {
+.align-center {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .paragraph-container {
-  h2 {
-    color: #645dd7;
+  h2,
+  strong {
+    color: var(--primary-color);
+    font-weight: bold; /* add some emphasis to the text */
   }
 
   p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 18px; /* reduce font-size for better readability */
+    line-height: 1.5; /* add some line-height to improve readability */
+    margin-bottom: 1.5em;
   }
+}
 
-  strong {
-    color: #645dd7;
+@media screen and (max-width: 768px) {
+  .profile {
+    width: 100%;
+    height: auto;
+    max-width: 340px; /* add max-width to maintain aspect ratio */
   }
 }
