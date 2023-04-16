@@ -20,14 +20,17 @@
   height: 100vh;
 }
 .text {
-  font-size: 42px;
+  font-size: 64px;
   line-height: 1.5;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
   color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .highlight {
   color: $raspberry;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
 }
 
 .button {
@@ -35,12 +38,11 @@
   padding: 10px 20px;
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
   margin-top: 10px;
-  cursor: pointer;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
