@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sarah Katherine Francis | Full-Stack Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="<%= asset_path('favicon.png') %>">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  </head>
-  <body>
-    <% unless current_page?(root_path) %>
-      <div class="sidebar">
-        <%= render 'shared/sidebar' %>
-      </div>
-      <div class="content">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5S5CR9PD2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Y5S5CR9PD2');
+      <title>Sarah Katherine Francis | Full-Stack Developer</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" type="image/png" href="<%= asset_path('favicon.png') %>">
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
+      <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+      <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+    <body>
+      <% unless current_page?(root_path) %>
+        <div class="sidebar">
+          <%= render 'shared/sidebar' %>
+        </div>
+        <div class="content">
+          <%= yield %>
+        </div>
+      <% else %>
         <%= yield %>
-      </div>
-    <% else %>
-      <%= yield %>
-    <% end %>
-  </body>
-</html>
+      <% end %>
+    </body>
+  </html>
