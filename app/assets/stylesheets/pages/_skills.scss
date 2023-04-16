@@ -8,7 +8,7 @@
 
 .class-content i {
   font-size: 80px;
-  margin: 10px;
+  margin: 12px;
 }
 
 .skill-item {
@@ -20,7 +20,7 @@
 
 .skill-icon {
   height: 80px;
-  margin: 10px;
+  margin: 12px;
 }
 
 h4 {
@@ -33,5 +33,17 @@ h4 {
   .card {
     width: 90%;
     height: auto;
+  }
+
+  .skill-icon {
+    height: 40px;
+  }
+
+  .class-content i {
+    font-size: 40px;
+  }
+
+  span {
+    font-size: 8px;
   }
 }

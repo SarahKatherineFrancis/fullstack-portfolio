@@ -52,3 +52,22 @@
     color: #fff;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 24px;
+    padding-left: 40px;
+  }
+
+  .highlight {
+    font-size: 24px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+  .button i {
+    font-size: 14px;
+  }
+}
