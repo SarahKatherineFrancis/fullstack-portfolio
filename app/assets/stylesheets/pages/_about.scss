@@ -1,9 +1,10 @@
 .profile {
   border-radius: 50%;
-  width: 340px;
-  height: 340px;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  object-fit: cover; /* add object-fit property to avoid image distortion */
+  object-fit: cover;
 }
 
 .align-center {
@@ -16,13 +17,13 @@
   h2,
   strong {
     color: var(--primary-color);
-    font-weight: bold; /* add some emphasis to the text */
+    font-weight: bold;
   }
 
   p {
     text-align: justify;
-    font-size: 18px; /* reduce font-size for better readability */
-    line-height: 1.5; /* add some line-height to improve readability */
+    font-size: 18px;
+    line-height: 1.5;
     margin-bottom: 1.5em;
   }
 }
@@ -31,6 +32,13 @@
   .profile {
     width: 100%;
     height: auto;
-    max-width: 340px; /* add max-width to maintain aspect ratio */
+    max-width: none;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .col-md-8 {
+    margin-top: 30px;
   }
 }

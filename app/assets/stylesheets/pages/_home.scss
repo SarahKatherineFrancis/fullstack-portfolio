@@ -29,7 +29,7 @@
 }
 
 .highlight {
-  color: #fc2b48;
+  color: $raspberry;
 }
 
 .button {
@@ -44,8 +44,8 @@
 }
 
 .button:hover {
-  border: 2px solid #fc2b48;
-  background-color: #fc2b48;
+  border: 2px solid $raspberry;
+  background-color: $raspberry;
   color: #fff;
 
   .highlight {
