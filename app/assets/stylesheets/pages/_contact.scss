@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #645dd7;
+    background-color: $purple;
     border: none;
     margin-right: 16px;
     transition: all 0.3s ease; /* add transition effect to button */
@@ -27,7 +27,7 @@
 
   a {
     text-decoration: none;
-    color: #fc2b48;
+    color: $raspberry;
     font-weight: bold; /* add some emphasis to link text */
   }
 }

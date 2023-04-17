@@ -3,16 +3,12 @@
   height: 250px;
   margin: 0 auto;
   padding: 20px;
-  width: 95%;
-  height: 250px;
-  margin: 0 auto;
-  padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .class-content i {
   font-size: 80px;
-  margin: 10px;
+  margin: 12px;
 }
 
 .skill-item {
@@ -24,11 +20,30 @@
 
 .skill-icon {
   height: 80px;
-  margin: 10px;
+  margin: 12px;
 }
 
 h4 {
   font-size: 24px;
   padding-bottom: 6px;
-  color: #645dd7;
+  color: $purple;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .skill-icon {
+    height: 40px;
+  }
+
+  .class-content i {
+    font-size: 40px;
+  }
+
+  span {
+    font-size: 8px;
+  }
 }

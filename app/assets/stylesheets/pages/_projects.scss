@@ -1,87 +1,98 @@
 .project-card {
   height: 480px;
-  width: 500px;
+  max-width: 500px;
   position: relative;
   border-radius: 4px;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
   background-color: #f8f8f8;
+}
 
-  .image {
-    height: 300px;
-    width: 500px;
-    border-radius: 4px;
+@media only screen and (max-width: 768px) {
+  .project-card {
+    height: auto;
+    max-width: 100%;
   }
+}
 
-  .card-content {
-    padding: 20px;
-    height: 200px;
-    font-size: 16px;
-  }
+.project-card .image {
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+}
 
-  .card-title {
-    color: #333;
-    font-size: 30px;
-    display: flex;
-    justify-content: space-between;
-    transition: color 0.3s ease;
+@media only screen and (max-width: 768px) {
+  .project-card .image {
+    height: auto;
   }
+}
 
-  .card-title i {
-    margin-left: auto;
-  }
+.project-card .card-content {
+  padding: 20px;
+  height: 200px;
+  font-size: 16px;
+}
 
-  .card-flip {
-    display: none;
-    position: absolute;
-    width: 100%;
-    background-color: #f8f8f8;
-    padding: 24px;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: opacity 0.3s ease;
+@media only screen and (max-width: 768px) {
+  .project-card .card-content {
+    height: auto;
   }
+}
 
-  .card-flip ul {
-    padding-bottom: 190px;
-  }
+.project-card .card-title {
+  color: #333;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  transition: color 0.3s ease;
+}
 
-  .card-flip li {
-    font-size: 18px;
-  }
+.project-card .card-title i {
+  margin-left: auto;
+}
 
-  .card-action i {
-    font-size: 44px;
-    color: #645dd7;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-    margin-right: 16px;
-  }
+.project-card .card-flip {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 24px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
 
-  .card-action a {
-    text-decoration: none;
-    font-size: 20px;
-    color: #645dd7;
-    border: 2px solid #645dd7;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+.project-card .card-flip ul {
+  padding-bottom: 190px;
+}
 
-  .card-action a:hover {
-    background-color: #645dd7;
-    color: #fff;
-  }
+.project-card .card-flip li {
+  font-size: 18px;
+}
+
+.project-card .card-action i {
+  font-size: 44px;
+  color: $purple;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  margin-right: 16px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.project-card .card-action i:hover {
+  color: $raspberry;
+  transform: rotate(10deg);
+}
+
+.project-card .card-action a {
+  text-decoration: none;
+  font-size: 20px;
+  color: $purple;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .project-card:hover .card-flip {
   display: block;
   opacity: 1;
-}
-
-.project-card:hover .card-content {
-  display: none;
-}
-
-.project-card:hover .image {
-  opacity: 0.5;
 }
