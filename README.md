@@ -1,5 +1,5 @@
 <h1>Fullstack Developer Portfolio</h1>
-<p>This is a portfolio website created by Sarah Katherine Francis to showcase my development skills and projects. The website is built using the Ruby on Rails framework.</p>
+<p>This is a portfolio website created to showcase my development skills and projects. The website is built using the Ruby on Rails framework.</p>
 
 <h2>Technology Stack</h2>
 <ul>
